@@ -12,6 +12,7 @@ namespace ProAgil.WebApi.Data
         public ProAgilRepository(ProAgilContext context)
         {
             _context = context;
+            _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         //GERAIS
@@ -46,7 +47,8 @@ namespace ProAgil.WebApi.Data
                 .Include(pe => pe.PalestrantesEventos)
                 .ThenInclude(p => p.Palestrante);
             }
-
+            //retirado pois o mesmo esta especificado de forma gerar no contrutor.
+            //query = query.AsNoTracking().OrderByDescending(c => c.DataEvento);
             query = query.OrderByDescending(c => c.DataEvento);
 
             return await query.ToArrayAsync();
@@ -64,6 +66,8 @@ namespace ProAgil.WebApi.Data
                     .Include(pe => pe.PalestrantesEventos)
                     .ThenInclude(p => p.Palestrante);
             }
+            //especificado no controtor
+            // query = query.AsNoTracking().OrderByDescending(c => c.DataEvento)
             query = query.OrderByDescending(c => c.DataEvento)
                 .Where(c => c.Tema.Contains(tema));
             // .Where(p => p.Tema.ToLower().Contains(tema.ToLower()));
@@ -83,6 +87,8 @@ namespace ProAgil.WebApi.Data
                     .Include(pe => pe.PalestrantesEventos)
                     .ThenInclude(p => p.Palestrante);
             }
+            //especificado no contrutor
+            //query = query.AsNoTracking().OrderByDescending(c => c.DataEvento)
             query = query.OrderByDescending(c => c.DataEvento)
                 .Where(c => c.Id == EventoId);
 
