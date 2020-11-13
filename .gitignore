@@ -1,5 +1,5 @@
 obj
 bin
-.vs
-.vscode
+.vs/*
+.vscode/*
 .DS_Store
