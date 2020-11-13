@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
-using ProAgil.Domain;
+using ProAgil.WebApi.Model;
 
-namespace ProAgil.WebApi.Data
+namespace ProAgil.WebApi.Interface.Data
 {
     public interface IProAgilRepository
     {

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using ProAgil.Domain;
-using ProAgil.WebApi.Data;
+using ProAgil.WebApi.Model;
+using ProAgil.WebApi.Repository.Data;
 
 namespace ProAgil.WebApi.Controllers
 {

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProAgil.WebApi.Data;
+using ProAgil.WebApi.Repository.Data;
 
 namespace ProAgil.WebApi.Migrations
 {

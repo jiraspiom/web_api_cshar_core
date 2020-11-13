@@ -1,7 +1,9 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using ProAgil.Domain;
+using ProAgil.WebApi.Interface.Data;
+using ProAgil.WebApi.Model;
+using ProAgil.WebApi.Repository.Data;
 
 namespace ProAgil.WebApi.Data
 {

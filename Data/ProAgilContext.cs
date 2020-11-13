@@ -1,7 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using ProAgil.Domain;
-
-namespace ProAgil.WebApi.Data
+using ProAgil.WebApi.Model;
+namespace ProAgil.WebApi.Repository.Data
 {
     public class ProAgilContext : DbContext
     {

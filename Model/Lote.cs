@@ -1,6 +1,6 @@
 using System;
 
-namespace ProAgil.Domain
+namespace ProAgil.WebApi.Model
 {
     public class Lote
     {

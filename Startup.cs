@@ -12,6 +12,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using ProAgil.WebApi.Data;
+using ProAgil.WebApi.Interface.Data;
+using ProAgil.WebApi.Repository.Data;
 
 namespace ProAgil.WebApi
 {

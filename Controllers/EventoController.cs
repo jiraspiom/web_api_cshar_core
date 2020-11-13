@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ProAgil.Domain;
-using ProAgil.WebApi.Data;
+using ProAgil.WebApi.Interface.Data;
+using ProAgil.WebApi.Model;
 
 namespace ProAgil.WebApi.Controllers
 {

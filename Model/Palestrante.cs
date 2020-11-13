@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-namespace ProAgil.Domain
+namespace ProAgil.WebApi.Model
 {
     public class Palestrante
     {
